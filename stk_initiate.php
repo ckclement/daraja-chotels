@@ -5,8 +5,8 @@ if(isset($_POST['submit'])){
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = 'bEB3BklAb68KBpbAHdqCQv7QWqCdKJnu'; //Fill with your app Consumer Key
-  $consumerSecret = 'MQGQRV6SRMjLDGAf'; // Fill with your app Secret
+  $consumerKey = 'fIhsThxryQG7mXGn6g1ek7mufCX6Mu9e'; //Fill with your app Consumer Key
+  $consumerSecret = 'nuQ8MQmHZJjVduha'; // Fill with your app Secret
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://radiant-retreat-74212.herokuapp.com/callback_url.php';  
+  $CallBackURL = 'https://rocky-wildwood-30199.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
